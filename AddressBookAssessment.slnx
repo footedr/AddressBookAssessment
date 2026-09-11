@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="AddressBookAssessment.Services/src/AddressBookAssessment.Core/AddressBookAssessment.Core.csproj" Id="20f60678-14b1-45af-a715-246e795b7817" />
+  <Project Path="AddressBookAssessment.Services/src/AddressBookAssessment.Services.AppHost/AddressBookAssessment.Services.AppHost.csproj" />
+  <Project Path="AddressBookAssessment.Services/src/AddressBookAssessment.Services.Data/AddressBookAssessment.Services.Data.csproj" Id="bb1b4036-b497-4a58-bb31-f0477260dd15" />
+  <Project Path="AddressBookAssessment.Services/src/AddressBookAssessment.Services.Web/AddressBookAssessment.Services.Web.csproj" />
+</Solution>
