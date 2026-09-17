@@ -27,10 +27,12 @@ builder.ConfigureOpenApi();
 
 var app = builder.Build();
 
+await app.InitializeDatabase();
+
 app.MapApi();
 app.MapOpenApiEndpoints();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.Run();
+await app.RunAsync();
