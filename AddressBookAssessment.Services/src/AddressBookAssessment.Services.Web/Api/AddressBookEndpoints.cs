@@ -16,6 +16,20 @@ public static class AddressBookEndpoints
 			.RequireAuthorization()
 			.WithSummary("Creates a new address book entry")
 			.WithExample("Create address book entry", _addressBookEntryRequest);
+
+		addressBook.Mediate<UpdateAddressBookEntryCommand>(HttpMethod.Put, "{id}")
+			.RequireAuthorization()
+			.WithSummary("Updates an existing address book entry")
+			.WithExample("Update address book entry", _addressBookEntryRequest);
+
+		addressBook.Mediate<DeleteAddressBookEntryCommand>(HttpMethod.Delete, "{id}")
+			.RequireAuthorization()
+			.WithSummary("Deletes an existing address book entry")
+			.WithExample("Delete address book entry", _addressBookEntryRequest);
+
+		addressBook.Mediate<ListAddressBookEntriesCommand>(HttpMethod.Get)
+			.RequireAuthorization()
+			.WithSummary("Lists all address book entries");
 	}
 
 	private static readonly AddressBookEntryRequest _addressBookEntryRequest = new()
